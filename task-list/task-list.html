@@ -1,0 +1,5 @@
+  <form>
+  <ol><li ng-repeat="item in $ctrl.list | filter: $ctrl.model track by $index">{{item}}<i id="x" class="material-icons" ng-click="$ctrl.removeToDo($index)">
+  close
+  </i></li></ol>
+  </form>

@@ -1,0 +1,9 @@
+<div id="listBox">
+  <div class="back"><a href="/"><i class="material-icons" id="backward">arrow_back</i>Go Back</a></div>
+  <div class="listTitle">To-Do List</div>
+  <div class="listTitle">A place to store the things you have to do!</div>
+  <input type="text" placeholder="Filter your to-do items" ng-model="$ctrl.search">
+  <task-list list="$ctrl.listItems" model="$ctrl.search"></task-list>
+  <input type="text" placeholder="Add your to-do" ng-model="$ctrl.toDo" ng-keydown="$ctrl.onKeyDown($event)">
+  <button ng-click="$ctrl.newToDo();">ADD</button>
+</div>
